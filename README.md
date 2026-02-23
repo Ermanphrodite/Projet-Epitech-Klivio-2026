@@ -1,4 +1,4 @@
 ## PROJET N°1 - KLIVIO
 
-* Voir la version : [HTML/CSS](https://bookish-adventure-l1oel13.pages.github.io/html-css/)
-* Voir la version : [Tailwind](https://bookish-adventure-l1oel13.pages.github.io/tailwind/)
+* Voir la version : [HTML/CSS](https://ermanphrodite.github.io/Projet-Epitech-Klivio-2026/html-css/)
+* Voir la version : [Tailwind](https://ermanphrodite.github.io/Projet-Epitech-Klivio-2026/tailwind/)
