@@ -1,0 +1,1718 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: 
+        url('./ressources/font/Montserrat/Montserrat-VariableFont_wght.ttf'),
+        url('./ressources/font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+        font-weight: 100 900;
+        font-style: normal;
+}
+
+:root {
+    --bleu : #152237;
+    --blanc : #FFFFFF;
+    --noir : #000000;
+    --montserrat : montserrat, sans-serif;
+    --gradient : linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%);
+    --font15px : clamp(7.5px, 0.892857143vw, 15px);
+    --jaune : #FFC700;
+    --vert : #44DD8A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--montserrat);
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--blanc);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--bleu);
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+
+/* NAVBAR */
+
+.navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav img {
+    width: 84px;
+    height: 31px;
+    margin-left: 5.83333333333333vw;
+}
+
+header nav a {
+    display: flex;
+    text-decoration: none;
+    color: var(--blanc);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 10vw;
+}
+
+header nav form {
+    width: 28.39285714285714%;
+    margin-left: 8.51190476190476vw;
+    min-width: 100px;
+}
+
+header nav input {
+    width: 100%;
+    height: 40px;
+    padding-left: 17px;
+    border-radius: 6px;
+    font-size: 15px;
+    color: var(--blanc);
+    border: 1px solid var(--blanc);
+    background-color: var(--bleu);
+    appearance: none;
+    min-width: 145px;
+}
+
+.centerNavbar {
+    display: flex;
+    position: relative;
+}
+
+.centerNavbar::after {
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--blanc);
+}
+
+header nav input::placeholder {
+    color: var(--blanc);
+}
+
+header nav input {
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+header nav button {
+    padding: 11px 25px ;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+} 
+
+.connexionButton {
+    margin-left: 13.0952380952381vw;
+}
+
+header nav button.inscriptionButton {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);   
+    margin-left: 1.13095238095238vw;
+    margin-right: 6.54761904761905vw;
+}
+
+.burger {
+    display: none;
+}
+
+.burger::after {
+    content: "\f0c9";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    pointer-events: none;
+    color: var(--blanc);
+}
+
+
+
+/* HEROSLIDE */
+
+.hero {
+    width: 100%;
+    background-image: 
+    linear-gradient(to right, rgba(0, 255, 150, 0.8), rgba(0, 150, 255, 0.8)), url("./ressources/bg-header-1.png");
+    background-position: center;
+    background-size: cover;
+    padding: 156.5px 0;
+    margin-top: 80px;
+}
+
+.hero-texts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-texts h1 {
+    font-size: clamp(32px, 2.857vw, 48px);
+    /* (48px / 1680px) * 100 = (x)vw */
+    font-weight: 800;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--bleu);
+
+}
+
+.hero-texts h2 {
+    font-size: clamp(10px, 1.19047619vw, 20px);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 22px;
+    color: var(--noir);
+}
+
+.hero-texts button {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+    border: none;
+    white-space: nowrap;
+    padding: 11px 14px;
+    color: var(--bleu)
+}
+
+
+
+
+
+
+
+/* FORMATIONS POPULAIRES */
+
+.formations_Populaires {
+    display: flex;
+}
+
+.elements_Formations_Populaires {
+    width: 88.0357143%;
+    max-width: 1690px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-h2-Formations_Populaires {
+    width: 85.2417303vw;
+    display: flex;
+    font-size: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    margin-top: 30px;
+    color: var(--bleu);
+    font-weight: 900;   
+}
+
+.parent-h2-Formations_Populaires h2 {
+    font-weight: 800;
+}
+
+
+.groupe_Cards_Formations_Populaires {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 34px;
+    justify-content: center;
+    gap: clamp(30px, 5.119047619vw, 150px);
+}
+
+
+.card_Formations_Populaires {
+    width: 305px;
+    min-height: 362px;
+    position: relative;
+}
+
+.parent_Texts-Formations_Populaires {
+    padding-left: 12px;
+}
+
+.card_Formations_Populaires h3 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--bleu);
+    margin-top: 21px;
+}
+
+.para_card_Formations_Populaires-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.stars_Formations_Populaires {
+    width: 130px;
+    height: 19.2px;
+    margin-top: 5px;
+}
+
+.stars_Formations_Populaires img {
+    width: 20.13px;
+    height: 19.2px;
+}
+
+.stars_Opacited {
+    opacity: 30%;
+}
+
+.para_card_Formations_Populaires-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 10.8px;
+}
+
+.prix {width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 31.58px;
+    border-radius: 93px;
+    border: none;
+    background-color: var(--bleu);
+    color: var(--blanc);
+    gap: 7px;
+    position: absolute;
+    left: 174px;
+    top: 189.79px;
+    box-shadow: 5px 4px 13.2px -1px #00000040;
+
+}
+
+.prixGrand {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+.prixPetit {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 7px;
+    text-decoration: line-through;
+}
+
+
+
+.button_Formation_Populaires{
+    display: flex;
+    align-self: center;
+    margin-top: 43px;
+    margin-bottom: 51px;
+}
+
+.button_Formation_Populaires button {
+    width: 225px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--blanc);
+    background-color: var(--bleu);
+    border-radius: 6px;
+    border: none;
+    white-space: nowrap;
+}
+
+
+.test {
+    display: none;
+    margin: 0 -52px;
+}
+
+
+/* FORMATIONS Recentes */
+
+.formations_Recentes {
+    display: flex;
+    background-color: var(--bleu);
+}
+
+.elements_Formations_Recentes {
+    width: 88.0357143%;
+    max-width: 1690px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-h2-Formations_Recentes {
+    width: 85.2417303vw;
+    display: flex;
+    font-size: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    margin-top: 30px;
+    color: var(--blanc);
+    font-weight: 900;
+}
+
+.parent-h2-Formations_Populaires h2 {
+    font-weight: 800;
+}
+
+.groupe_Cards_Formations_Recentes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 34px;
+    justify-content: center;
+    gap: clamp(30px, 5.119047619vw, 150px);
+}
+
+.card_Formations_Recentes {
+    width: 305px;
+    min-height: 362px;
+    position: relative;
+}
+
+.parent_Texts-Formations_Recentes {
+    padding-left: 12px;
+}
+
+.card_Formations_Recentes h3 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--blanc);
+    margin-top: 21px;
+    letter-spacing: -0.07vw;
+}
+
+.para_card_Formations_Recentes-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--blanc);
+}
+
+.stars_Formations_Recentes {
+    width: 130px;
+    height: 19.2px;
+    margin-top: 5px;
+}
+
+.stars_Formations_Recentes img {
+    width: 20.13px;
+    height: 19.2px;
+}
+
+.stars_Opacited {
+    opacity: 30%;
+}
+
+.para_card_Formations_Recentes-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 10.8px;
+    color: var(--blanc);
+}
+
+.prixRecentes {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 31.58px;
+    border-radius: 93px;
+    border: none;
+    background-color: var(--blanc);
+    color: var(--bleu);
+    gap: 7px;
+    position: absolute;
+    left: 174px;
+    top: 189.79px;
+    box-shadow: 5px 4px 13.2px -1px #00000040;
+
+}
+
+.prixGrandRecentes {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+.prixPetitRecentes {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 7px;
+    text-decoration: line-through;
+}
+
+.button_Formation_Recentes{
+    display: flex;
+    align-self: center;
+    margin-top: 43px;
+    margin-bottom: 51px;
+}
+
+.button_Formation_Recentes button {
+    width: 225px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--bleu);
+    background-color: var(--blanc);
+    border-radius: 6px;
+    border: none;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+/* AVIS CLIENTS */
+
+.avis_Clients {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avis_Clients h2 {
+    margin-top: 58px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--bleu);
+}
+
+.elements_Avis_Clients {
+    width: 82.02380952vw;
+    max-width: 1690px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 66px;
+    margin-bottom: 131px;
+    gap: 1.42857142857143vw;
+}
+
+.cards_Avis_Clients {
+    width: 48.69375907111756%;
+    height: auto;
+}
+
+.cards_Avis_Clients h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--bleu);
+}
+
+.cards_Avis_Clients p {
+    margin-top: 13.8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.avis_Clients_Photos {
+    width: 139px;
+    height: 139px;
+    border-radius: 100px;
+
+}
+
+.avis_stars {
+    margin-top: 7px;
+    height: 19.2px;
+}
+
+
+
+
+
+/* LES AVANTAGES CLIVIO */
+
+.avantages_Klivio {
+    width: 100%;
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: center;
+}
+
+.groupe-elements_Avantages_Klivio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 5.83333333333333vw;
+    padding-right: 6.13095238095238vw;
+    padding-bottom: 93px;
+    gap: 4.22619047619048vw;
+    max-width: 1680px;
+}
+
+.elements_Avantages_Klivio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+}
+
+.elements_Avantages_Klivio h2 {
+    width: 100%;
+    display: flex;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: var(--bleu);
+    margin-top: 79px;
+}
+
+.elements_Avantages_Klivio ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 43px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 616px;
+    padding-left: 3.86904761904762vw;
+}
+
+.parent_image_Avantages_Klivio {
+    margin: auto;
+}
+
+.parent_image_Avantages_Klivio img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 76px;
+}
+
+.elements_Avantages_Klivio ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.li1, .li2, .li3, .li4, .li5, .li6 {
+    position: relative;
+    padding-left: 35px;
+    margin-left: 45px;
+}
+
+.li1::before {
+    content:"\f060";
+    transform: rotate(135deg);
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    font-size: 23px;
+    left: -47px;
+    color: var(--vert);
+    -webkit-text-stroke: var(--vert);
+}
+
+
+.li2::before {
+    content:"\f304";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 22.55px;
+    left: -47px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
+}
+
+.li3::before {
+    content:"\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 25px;
+    left: -47px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
+}
+
+.li4::before {
+    content:"\f005";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 25px;
+    left: -47px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
+}
+
+.li5::before {
+    content:"\f017";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 25px;
+    left: -47px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
+}
+
+.li6::before {
+    content:"\f27a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 25px;
+    left: -47px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
+}
+
+
+
+
+
+
+
+
+/* CREEZ VOS FORMATIONS */
+
+.creer_Formations {
+    background-color: var(--vert);
+    display: flex;
+    justify-content: center;
+}
+
+.elements_creer_formations {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+    max-width: 40.83333333333333vw
+}
+
+.groupe-elements_creer_formations {
+    width: 100%;
+    gap: 82px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--vert);
+    padding-top: 76px;
+    padding-left: 6.01190476190476vw;
+    padding-right: 5.05952380952381vw;
+    padding-bottom: 93px;
+    max-width: 1680px;
+}
+
+.parent_image_creer_formations .h2-mobile {
+        display: none;
+}
+
+
+.elements_creer_formations h2 {
+    width: 100%;
+    display: flex;
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: var(--bleu);
+
+}
+
+.elements_creer_formations ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 43px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 616px;
+    margin-left: 3.86904761904762vw;
+}
+
+.parent_image_creer_formations {
+    margin: auto;
+}
+
+.parent_image_creer_formations img {
+    max-width: 100%;
+    height: auto;
+}
+
+.elements_creer_formations ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.li7, .li8, .li9, .li10, .li11 {
+    position: relative;
+}
+
+.li7::before {
+    content:"\f4c0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 23px;
+    left: -70px;
+    color: var(--vert);
+    -webkit-text-stroke: 1px var(--blanc);
+}
+
+.li8::before {
+    content:"\f004";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 23px;
+    left: -70px;
+    color: var(--vert);
+    -webkit-text-stroke: 1px var(--blanc);
+}
+
+.li9::before {
+    content:"\f304";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 23px;
+    left: -70px;
+    color: var(--vert);
+    -webkit-text-stroke: 1px var(--blanc);
+}
+
+.li10::before {
+    content:"\f013";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 23px;
+    left: -70px;
+    color: var(--vert);
+    -webkit-text-stroke: 1px var(--blanc);
+}
+
+.li11::before {
+    content:"\f007";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 23px;
+    left: -70px;
+    color: var(--vert);
+    -webkit-text-stroke: 1px var(--blanc);
+}
+
+
+/* À PROPOS DE KLIVIO */
+
+.apropos_klivio {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.responsive_apropos_klivio {
+    width: 100%;
+    display: flex;
+}
+
+.elements_apropos_klivio {
+    width: 50.5952381vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    align-items: center;
+    justify-content: center;
+    padding: 183px 0;
+    padding-left: 6.13095238vw;
+    padding-right: 3.63095238vw;
+
+}
+
+.elements_apropos_klivio h2 {
+    width: 100%;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+    color: var(--bleu);
+}
+
+.elements_apropos_klivio p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--bleu);
+}
+
+.parent_logo_apropos_klivio {
+    width: 49.4047619vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bleu);
+}
+
+.parent_logo_apropos_klivio img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* NOUS CONTACTER */
+
+
+.nous_contacter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.form_nous_contacter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elements_form_nous_contacter {
+    display: flex;
+    justify-content: center;
+    gap: 8.2142857vw;
+    margin-top: 55px;
+}
+
+.elements_form_nous_contacter input {
+    width: 35.6547619vw;
+    background: var(--bleu);
+    height: 45.25px;
+}
+
+.elements_form_nous_contacter label {
+    display: none;
+}
+
+textarea {
+    width: 79.5190476vw;
+    margin-top: 55.75px;
+    background: var(--bleu);
+    height: 194.64px;
+}
+
+.nous_contacter h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--bleu);
+    margin-top: 60px;
+}
+
+.nous_contacter hr.ligne_sous_nous_contacter {
+    margin: 0 auto;
+    margin-top: 39px;
+    height: 1px;
+    width: 20.8333333vw;
+    font-weight: 500;
+    background: var(--vert);
+    border: none;
+}
+
+
+.buttonEnvoyer {
+    margin-top: 54.64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonEnvoyer button {
+    width: 20.9261905vw; 
+    height: 45.3px;
+    border-radius: 6px;
+    background: var(--vert);
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ligne_basse_nous_contacter {
+    height: 18px;
+    background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
+    margin-top: 77.42px;
+    border: none;
+}
+
+.form_nous_contacter input[type="text"] {
+    color: #FFFFFF;
+    padding-left: 18px;
+}
+
+.form_nous_contacter input::placeholder, .form_nous_contacter textarea::placeholder {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.form_nous_contacter textarea {
+    padding-top: 15px;
+    padding-left: 16.75px;
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 471px;
+    background: var(--bleu);
+    color: var(--blanc);
+    padding-left: 5.7142857vw;
+    padding-right: 6.0714286vw;
+}
+
+.footer_conteneur_superieur {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 91px;
+}
+
+.parent_footer_logo img {
+    width: 14.4642857vw;
+    max-width: 243px;
+    height: auto;
+    max-height: 87px;
+}
+
+
+
+
+.footer_elements_central_superieur {
+    display: flex;
+    margin-top: 11px;
+    margin-bottom: 28px;
+    gap: 65px;
+}
+
+.footer_mentions h3 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.footer_mentions ul {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.footer_mentions ul li a {
+    text-decoration: none;
+    color: var(--blanc);
+
+}
+
+.footer_coordonnees h3 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.footer_coordonnees ul {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 43px;
+    list-style-type: none;
+}
+
+.li12, .li13, .li14 {
+    position: relative;
+}
+
+.li12::before {
+    content:"\f3c5";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 22.55px;
+    left: -35px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blanc);
+}
+
+.li13::before {
+    content:"\f095";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 22.55px;
+    left: -35px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blanc);
+}
+
+.li14::before {
+    content:"\f0e0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 22.55px;
+    left: -35px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blanc);
+}
+
+.coordonnees_email {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 31px;
+}
+
+.footer_buttons {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer_button_connexion {
+    padding: 0 22.25px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background: var(--blanc);
+    border-radius: 6px;
+    border: none;
+}
+
+.footer_button_inscription {
+    padding: 0 22.25px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    border-radius: 6px;
+    border: none;
+}
+
+
+
+.ligne_basse_footer {
+    background-color: var(--vert);
+    height: 2px;
+    border: none;
+    margin-bottom: 25px;
+}
+
+
+
+.footer_conteneur_inferieur {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_conteneur_inferieur p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.footer_reseaux {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+
+
+.suivez-nous {
+    margin-right: 24px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: right;
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+
+.facebook {
+    margin-right: 21px;
+}
+
+.X {
+    margin-right: 21px;
+}
+
+.instagram {
+    margin-right: 15px;
+}
+
+
+.apropos_klivio, .formations_Populaires, .formations_Recentes {
+    scroll-margin-top: 80px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1679px) and (max-width: 1682px) {
+    .test {
+        display: block;
+    }
+
+    .parent-h2-Formations_Populaires {
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1678px) {
+    .parent-h2-Formations_Populaires, .parent-h2-Formations_Recentes {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1054px) {
+    .centerNavbar::after {
+        content: "";
+        font-family: "";
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .parent-h2-Formations_Populaires {
+        margin: 0;
+        margin-top: 20px;
+        line-height: 37px;
+    }
+
+    .parent-h2-Formations_Populaires h2 {
+        font-size: 30px;
+
+    }
+
+    header nav a {
+        margin-left: 6vw;
+    }
+
+    .parent-h2-Formations_Populaires h2 {
+    font-weight: 750;
+    }
+
+    .parent-h2-Formations_Recentes h2 {
+        font-size: 30px;
+    }
+
+    .card_Formations_Recentes h3 {
+        width: 100%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--blanc);
+        margin-top: 21px;
+        letter-spacing: -0.12vw;
+    }
+
+    .groupe-elements_Avantages_Klivio {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 22px;
+        align-items: center;    
+    }
+
+    .elements_Avantages_Klivio {
+        display: flex;
+        align-items: center;
+    }
+
+    .elements_creer_formations .h2-desk {
+        display: none;
+    }
+
+    .elements_creer_formations .h2-mobile {
+        display: flex;
+    }
+
+    .elements_Avantages_Klivio h2 {
+        width: 349px;
+        height: 93px;
+        font-weight: 900;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .elements_Avantages_Klivio ul {
+        margin-top: 17px;
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 75px;
+        padding-right: 22px;
+    }
+
+    .parent_image_Avantages_Klivio img {
+        width: 83.20610687022901vw;
+        height: 244px;
+        object-fit: cover;
+        background-position: center;
+        margin-bottom: 38px;
+        margin-top: 0;
+    }
+
+    .groupe-elements_creer_formations {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 27px;
+        align-items: center;    
+        gap: 0;
+    }
+
+    .elements_creer_formations {
+        display: flex;
+        align-items: center;
+        max-width: none;
+    }
+
+    .elements_creer_formations h2 {
+        margin-bottom: 13px;
+        width: 366px;
+        height: 79px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .elements_creer_formations .h2-desk {
+        display: none;
+    }
+
+    .parent_image_creer_formations .h2-mobile {
+        display: flex;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--bleu);
+        width: 83.20610687022901vw;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+
+    .elements_creer_formations ul {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 97px;
+        padding-right: 24px;
+        margin-bottom: 30px;
+    }
+
+    .parent_image_creer_formations img {
+        width: 82.44274809160305vw;
+        height: 243px;
+        object-fit: cover;
+        background-position: center;
+        margin-bottom: 22px;
+    }
+
+    .li1, .li2, .li3, .li4, .li5, .li6 {
+        position: relative;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .li7::before, .li8::before, .li9::before, .li10::before, .li11::before {
+    left: -70px;
+    }
+
+    .responsive_apropos_klivio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elements_apropos_klivio {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #F5F5F5;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 0;
+        padding-left: 6.13095238vw;
+        padding-right: 3.63095238vw;
+    }
+
+    .elements_apropos_klivio h2 {
+        width: 82.17811704834606vw;
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .parent_logo_apropos_klivio {
+        width: 100%;
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bleu);
+    }
+
+    .parent_logo_apropos_klivio img {
+        width: 100%;
+        max-width: 54.45292621vw;
+        height: auto;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .connexionButton, .inscriptionButton, input#searchBar, header nav a {
+        display: none;
+    }
+
+    .navBar img {
+        margin-left: 27px;
+    }
+
+    .parent-h2-Formations_Populaires {
+        font-size: 21px;
+    }
+
+    .parent-h2-Formations_Populaires H2 {
+        font-weight: 780;
+    }
+
+
+    .parent-h2-Formations_Recentes {
+        font-size: 21px;
+    }
+
+    .parent-h2-Formations_Recentes h2 {
+        font-weight: 780;
+    }
+
+    .burger {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 56px;
+        height: 56px;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: var(--blanc);
+        font-size: 5vw;
+        margin-right: 18px;
+    }
+
+    .hero {
+        padding: 0 0;
+        padding-top: 80px;
+        margin: 0;
+    }
+
+    
+    .hero-texts h1 {
+        width: 91.6030534351145vw;
+        margin-top: 47px;
+        line-height: 37px;
+    }
+    .hero-texts h2 {
+        width: 91.6030534351145vw;
+        margin-top: 27px;
+        margin-bottom: 0;
+        line-height: 24px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .hero-texts button {
+        margin-top: 27px;
+        margin-bottom: 34px;
+    }
+
+    .avis_Clients h2 {
+        margin-top: 28px;
+        height: auto;
+        width: 73.5368957vw;
+        text-align: center;
+        font-size: 30px;
+    }
+    .elements_Avis_Clients {
+        flex-direction: column;
+        align-items: center;
+        width: 88.0559796437659vw;
+        gap: 50px;
+        margin: 0;
+        margin-top: 26px;
+        margin-bottom: 28px;
+    }
+    .cards_Avis_Clients {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cards_Avis_Clients p {
+        text-align: left;
+    }
+
+    .groupe-elements_creer_formations ul {
+        padding-left: 75px;
+    }
+
+    .li7::before {
+        content:"\f4c0";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        left: -60px;
+    }
+
+    .li8::before {
+        content:"\f004";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        left: -60px;
+    }
+
+    .li9::before {
+        content:"\f304";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        left: -60px;
+    }
+
+    .li10::before {
+        content:"\f013";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        left: -60px;
+    }
+
+    .li11::before {
+        content:"\f007";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        left: -60px;
+    }
+
+    .li12::before {
+        font-size: 20px;
+    }
+
+    .li13::before, .li14::before {
+        left: -39px;
+        font-size: 18px;
+    }
+
+    .elements_form_nous_contacter {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+        margin-top: 0px;
+    }
+
+    .nous_contacter h2 {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 29px;
+        margin-bottom: 10px;
+
+    }
+
+    .elements_form_nous_contacter input, textarea {
+        width: 90.5852417vw;
+        margin: 0;
+        margin-top: 21px;
+    }
+
+    .buttonEnvoyer {
+        margin: 0;
+    }
+
+    .buttonEnvoyer button {
+        margin-top: 22px;
+        width: 90.5852417vw;
+    }
+    
+    .ligne_sous_nous_contacter {
+        display: none;
+    }
+
+    .ligne_basse_nous_contacter {
+        margin-top: 38px;
+        background: linear-gradient(90deg, #4ade80 0%, #34d399 100%);
+    }
+
+    .footer_conteneur_inferieur {
+        display: none;
+    }
+
+    .ligne_basse_footer {
+        display: none;
+    }
+
+    .footer_buttons {
+        display: none;
+    }
+
+    footer {
+        height: 555px;
+        padding: 0;
+        background: var(--bleu);
+        color: var(--blanc);
+    }
+
+    .parent_footer_logo {
+        margin-top: 45px;
+    }
+
+    .parent_footer_logo img {
+        width: 61.8320611vw;
+        height: auto;
+    }
+
+    .footer_conteneur_superieur {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer_elements_central_superieur {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 0;
+    }
+
+    .footer_mentions {
+        margin: 0;
+        margin-top: 45px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .footer_coordonnees {
+        text-align: start;
+    }
+    .footer_coordonnees h3 {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+    .footer_coordonnees ul {
+        list-style-type: none;
+        padding: 0;
+        padding-left: 40px;
+    }
+}

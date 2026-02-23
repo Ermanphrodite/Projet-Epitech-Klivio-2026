@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth scroll-pt-20">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLIVIO - L'excellence pour vous</title>
+    <meta name="description" content="Découvrez nos formations en développement web pour débutants. Apprenez le HTML, CSS et JS avec des mentors passionnés. Inscrivez-vous gratuitement !">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./ressources/icone/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen m-0 font-bold text-green-950 pt-20 bg-stone-200">
+    <header class="fixed top-0 left-0 z-50 w-full bg-green-950 text-green-950 font-bold shadow-stone-500/20">
+        <nav class="flex items-center gap-3 mx-4 h-20 text-base    max-lg:justify-between">
+            <img onclick="window.scrollTo(0, 0)" class="shrink-0 max-h-14 cursor-pointer shadow-xl    lg:inline-block lg:transition-transform lg:hover:scale-110" src="./ressources/img/logo.png" alt="logo de Klivio" title="Logo de Klivio">
+            <a class="shrink-0 whitespace-nowrap px-3 py-2 bg-stone-200 rounded-md border-2 border-stone-200 shadow-xl shadow-stone-500/20 transition-all    max-md:hidden    md:ml-auto    max-lg:duration-[50ms] max-lg:border-stone-200 max-lg:active:bg-green-900 max-lg:active:text-stone-200 max-lg:active:border-2    lg:duration-[400ms] lg:transition-transform lg:hover:scale-105 lg:hover:bg-green-900 lg:hover:text-stone-200 lg:hover:border-2 lg:hover:border-stone-200    xl:ml-[167px]" href="#forma_popu" aria-label='Bouton "les formations"' title="Les formations">Les formations</a>
+            <form class="shadow-xl shadow-stone-500/20 flex flex-1 min-w-0 max-w-sm rounded-md py-2 bg-stone-200 max-md:hidden items-center mx-auto border-2 border-stone-200" aria-label="Recherchez sur le site" title="Barre de recherche">
+                <label class="hidden" for="searchBar"></label>
+                <input class="w-full font-semibold placeholder:text-green-950 bg-no-repeat bg-[right_10px_center] bg-[url('https://www.svgrepo.com/show/532555/search.svg')] bg-[length:18px] focus:outline-none focus:bg-none bg-stone-200 focus:placeholder-transparent pl-4" type="search" name="searchBar" id="searchBar" aria-label="Rechercher" placeholder="Rechercher">
+            </form>
+            <button class="rounded-md px-4 py-2 bg-stone-200 shrink-0 whitespace-nowrap border-2 border-stone-200 shadow-2xl shadow-stone-500/20 transition-all    max-md:hidden    max-lg:border-stone-200 max-lg:active:bg-green-900 max-lg:active:text-stone-200 max-lg:active:border-2    lg:duration-[400ms] lg:transition-transform lg:hover:scale-105 lg:hover:bg-green-900 lg:hover:text-stone-200 lg:hover:border-2 lg:hover:border-white" aria-label="Connexion" title="Connexion">Connexion</button>
+            <button class="rounded-md px-4 py-2 bg-stone-200 shrink-0 whitespace-nowrap border-2 border-stone-200 shadow-2xl transition-all    max-md:hidden    max-lg:border-stone-200 max-lg:active:bg-green-900 max-lg:active:text-stone-200 max-lg:active:border-2    lg:duration-[400ms] lg:transition-transform lg:hover:scale-105 lg:hover:bg-green-900 lg:hover:text-stone-200 lg:hover:border-2 lg:hover:border-white" aria-label="Inscription" title="Inscription">Inscription</button>
+            <button class="flex justify-center items-center h-14 w-14 text-3xl text-white md:hidden" aria-label="Menu">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section class="flex justify-center">
+            <div class="flex flex-col w-full h-[393px] bg-[url('./ressources/img/golf2.jpg')] bg-cover bg-center bg-no-repeat">
+                <h1 class="mx-auto max-w-[97vw] sm:max-w-[90vw] text-center text-4xl md:text-5xl text-white mt-[3.6rem] md:mt-[4.7rem] lg:mt-[6rem]">KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
+                <h2 class="text-center text-2xl mt-[1rem] text-white">LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h2>
+                <button class="mt-[1.5rem] mx-auto rounded-md px-4 py-2 bg-green-900 text-stone-200 shrink-0 whitespace-nowrap border-2 border-stone-200 shadow-xl shadow-stone-500/20 transition-all duration-[400ms]    max-lg:active:bg-stone-200 max-lg:active:text-green-950 max-lg:active:border-green-700    lg:transition-transform lg:hover:scale-105 lg:hover:bg-stone-200 lg:hover:text-green-950 lg:hover:border-green-700" onclick="window.location.href='#apropos'" aria-label="bouton qui mène aux informations complémetaires du site" title="En savoir plus">En savoir plus</button>
+            </div>
+        </section>
+        <section id="forma_popu" class="flex justify-center mx-auto bg-white">
+            <div class="flex flex-col items-center">
+                <div class="">
+                    <h2 class="uppercase flex w-[90vw] text-4xl justify-center items-center text-center mt-10">Les formations populaires</h2>
+                </div>
+                <div class="flex max-md:flex-col gap-10 flex-wrap md:justify-center items-center mt-12">
+                    <div class="flex flex-col w-[350px] h-[390px]  relative bg-stone-200 rounded-md rounded-bl-2xl rounded-br-2xl shadow-[0_8px_1rem_rgba(0,0,0,0.20)] lg:hover:shadow-[0_8px_1rem_rgba(0,0,0,0.50)] lg:hover:bottom-2">
+                        <img class="w-full h-[236px] object-cover rounded-tl-md rounded-tr-md object-center" src="./ressources/img/groupe-d-amis-s-amusant-sur-le-parcours-de-golf.jpg" alt="groupe d'amis s'amusant sur le parcours de golf" title="Groupe d'amis sur le green">
+                        <div class="flex justify-center items-center gap-1 border-[10px] border-stone-200 absolute top-[13rem] right-[1rem] rounded-xl p-1 bg-green-900 text-stone-200">
+                            <p class="">15,99 €</p>
+                            <p class="font-normal text-xs line-through">60 €</p>
+                        </div>
+                        <div class="flex flex-col px-2 my-4">
+                            <h3 class="text-2xl">Parler en public</h3>
+                            <p class="mt-2">Sonia Lefèvre | Coach prise de parole</p>
+                            <div class="flex absolute top-[13rem] left-[0.60rem]">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img class="opacity-50" src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                            </div>
+                            <p class="font-medium mt-2">Gagnez en aisance et captez votre auditoire</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[350px] h-[390px]  relative bg-stone-200 rounded-md rounded-bl-2xl rounded-br-2xl shadow-[0_8px_1rem_rgba(0,0,0,0.20)] lg:hover:shadow-[0_8px_1rem_rgba(0,0,0,0.50)] lg:hover:bottom-2">
+                        <img class="w-full h-[236px] object-cover rounded-tl-md rounded-tr-md object-center" src="./ressources/img/scene-amusante-sur-le-golf.jpg" alt="scene amusante sur le golf" title="Scène amusante sur le golf">
+                        <div class="flex justify-center items-center gap-1 border-[10px] border-stone-200 absolute top-[13rem] right-[1rem] rounded-xl p-1 bg-green-900 text-stone-200">
+                            <p class="">15,99 €</p>
+                            <p class="font-normal text-xs line-through">60 €</p>
+                        </div>
+                        <div class="flex flex-col px-2 my-4">
+                            <h3 class="text-2xl">Gérer le stress</h3>
+                            <p class="mt-2">Lucie Garnier | Formatrice</p>
+                            <div class="flex absolute top-[13rem] left-[0.60rem]">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                            </div>
+                            <p class="font-medium mt-2">Apprenez à rester serein face aux défis</p>
+                        </div>
+                    </div>
+                    <div class="hidden"></div>
+                    <div class="flex flex-col w-[350px] h-[390px]  relative bg-stone-200 rounded-md  rounded-bl-2xl rounded-br-2xl shadow-[0_8px_1rem_rgba(0,0,0,0.20)] lg:hover:shadow-[0_8px_1rem_rgba(0,0,0,0.50)] lg:hover:bottom-2">
+                        <img class="w-full h-[236px] object-cover rounded-tl-md rounded-tr-md object-center" src="./ressources/img/scene-avec-des-amis-sur-le-terrain-de-golf.jpg" alt="scene avec des amis sur le terrain de golf" title="Des amis sur le terrain de golf">
+                        <div class="flex justify-center items-center gap-1 border-[10px] border-stone-200 absolute top-[13rem] right-[1rem] rounded-xl p-1 bg-green-900 text-stone-200">
+                            <p class="">15,99 €</p>
+                            <p class="font-normal text-xs line-through">60 €</p>
+                        </div>
+                        <div class="flex flex-col px-2 my-4">
+                            <h3 class="text-2xl">Travailler en équipe</h3>
+                            <p class="mt-2">David Moreau | Expert</p>
+                            <div class="flex absolute top-[13rem] left-[0.60rem]">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img class="opacity-50" src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                            </div>
+                            <p class="font-medium mt-2">Collaborez efficacement, même à distance</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[350px] h-[390px]  relative bg-stone-200 rounded-md  rounded-bl-2xl rounded-br-2xl shadow-[0_8px_1rem_rgba(0,0,0,0.20)] lg:hover:shadow-[0_8px_1rem_rgba(0,0,0,0.50)] lg:hover:bottom-2">
+                        <img class="w-full h-[236px] object-cover  rounded-tl-md rounded-tr-md object-center" src="./ressources/img/vue-rapprochee-d-un-sablier-rempli-de-sable.jpg" alt="vue rapprochee d'un sablier rempli de sable" title="Vue d'un sablier">
+                        <div class="flex justify-center items-center gap-1 border-[10px] border-stone-200 absolute top-[13rem] right-[1rem] rounded-xl p-1 bg-green-900 text-stone-200">
+                            <p class="">15,99 €</p>
+                            <p class="font-normal text-xs line-through">60 €</p>
+                        </div>
+                        <div class="flex flex-col px-2 my-4">
+                            <h3 class="text-2xl">Gérer son temps</h3>
+                            <p class="mt-2">Claire Dumas | Coach organisation</p>
+                            <div class="flex absolute top-[13rem] left-[0.60rem]">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img class="opacity-50" src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                            </div>
+                            <p class="font-medium mt-2">Optimisez vos journées et gagnez en efficacité</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-14" onclick="window.location.href='#formarecente'">
+                    <button class="mt-[3.5rem] mx-auto rounded-md px-4 py-2 bg-green-900 shrink-0 whitespace-nowrap text-stone-200 lg:hover:text-green-950 lg:hover:border-green-700 border-2 lg:hover:bg-stone-200 border-stone-200 transition-all duration-[400ms] shadow-xl shadow-stone-500/20       max-lg:active:text-green-950 max-lg:active:border-green-700 max-lg:active:bg-stone-200 lg:hover:scale-105 lg:transition-transform" title="Voir plus de formations" aria-label="bouton qui mène aux autres formation récentes">Voir plus de formations</button>
+                </div>
+            </div>
+        </section>
+        <section id="formarecente" class="flex justify-center mx-auto bg-green-900">
+            <div class="flex flex-col items-center">
+                <div>
+                    <h2 class="uppercase flex w-[90vw] text-4xl justify-center items-center text-center mt-10 text-white">Les formations récentes</h2>
+                </div>
+                <div class="flex max-md:flex-col gap-10 flex-wrap md:justify-center items-center mt-12">
+                    <div class="flex flex-col w-[350px] h-[390px]  relative bg-stone-200 rounded-md rounded-bl-2xl rounded-br-2xl shadow-[0_8px_1rem_rgba(255,255,255,0.20)] lg:hover:shadow-[0_8px_1rem_rgba(255,255,255,0.50)] lg:hover:bottom-2">
+                        <img class="w-full h-[236px] object-cover rounded-tl-md rounded-tr-md object-center" src="./ressources/img/fille-prenant-selfie-avec-des-amis-sur-le-terrain-de-golf.jpg" alt="fille prenant un selfie avec des amis sur le terrain de gold" title="Groupe d'amis qui prennent un selfie sur le terrain">
+                        <div class="flex justify-center items-center gap-1 border-[10px] border-stone-200 absolute top-[13rem] right-[1rem] rounded-xl p-1 bg-green-900 text-stone-200">
+                            <p class="">15,99 €</p>
+                            <p class="font-normal text-xs line-through">60 €</p>
+                        </div>
+                        <div class="flex flex-col px-2 my-4">
+                            <h3 class="text-2xl">Mieux communiquer</h3>
+                            <p class="mt-2">Julien Martel | Coach en comm.</p>
+                            <div class="flex absolute top-[13rem] left-[0.60rem]">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                            </div>
+                            <p class="font-medium mt-2">Améliorez vos échanges et votre impact relationnel</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[350px] h-[390px]  relative bg-stone-200 rounded-md rounded-bl-2xl rounded-br-2xl shadow-[0_8px_1rem_rgba(255,255,255,0.20)] lg:hover:shadow-[0_8px_1rem_rgba(255,255,255,0.50)] lg:hover:bottom-2">
+                        <img class="w-full h-[236px] object-cover rounded-tl-md rounded-tr-md object-center" src="./ressources/img/vue-arriere-homme-jouant-au-golf-dans-la-nature.jpg" alt="vue de dos d'un homme jouant au golf" title="Joueur de golf qui lève les bras pour la victoire">
+                        <div class="flex justify-center items-center gap-1 border-[10px] border-stone-200 absolute top-[13rem] right-[1rem] rounded-xl p-1 bg-green-900 text-stone-200">
+                            <p class="">15,99 €</p>
+                            <p class="font-normal text-xs line-through">60 €</p>
+                        </div>
+                        <div class="flex flex-col px-2 my-4">
+                            <h3 class="text-2xl">Maîtriser ses émotions</h3>
+                            <p class="mt-2">Amel Benali | Psy. du travail</p>
+                            <div class="flex absolute top-[13rem] left-[0.60rem]">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img class="opacity-50" src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                            </div>
+                            <p class="font-medium mt-2">Développez calme et intelligence émotionnelle</p>
+                        </div>
+                    </div>
+                  <div class="hidden"></div>
+                    <div class="flex flex-col w-[350px] h-[390px]  relative bg-stone-200 rounded-md rounded-bl-2xl rounded-br-2xl shadow-[0_8px_1rem_rgba(255,255,255,0.20)] lg:hover:shadow-[0_8px_1rem_rgba(255,255,255,0.50)] lg:hover:bottom-2">
+                        <img class="w-full h-[236px] object-cover rounded-tl-md rounded-tr-md object-center" src="./ressources/img/un-homme-de-taille-moyenne-joue-au-golf-dans-la-nature.jpg" alt="joueur de golf" title="Joueur de golf assez agé">
+                        <div class="flex justify-center items-center gap-1 border-[10px] border-stone-200 absolute top-[13rem] right-[1rem] rounded-xl p-1 bg-green-900 text-stone-200">
+                            <p class="">15,99 €</p>
+                            <p class="font-normal text-xs line-through">60 €</p>
+                        </div>
+                        <div class="flex flex-col px-2 my-4">
+                            <h3 class="text-2xl">Résoudre les problèmes</h3>
+                            <p class="mt-2">Thomas Rivière | Expert</p>
+                            <div class="flex absolute top-[13rem] left-[0.60rem]">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                            </div>
+                            <p class="font-medium mt-2">Analysez, décidez et trouvez des solutions durables</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[350px] h-[390px]  relative bg-stone-200 rounded-md rounded-bl-2xl rounded-br-2xl shadow-[0_8px_1rem_rgba(255,255,255,0.20)] lg:hover:shadow-[0_8px_1rem_rgba(255,255,255,0.50)] lg:hover:bottom-2">
+                        <img class="w-full h-[236px] object-cover rounded-tl-md rounded-tr-md object-center" src="./ressources/img/man-funny-sport-crazy-expression.jpg" alt="Homme qui sourit avec un club de golf dans la main" title="Image d'un golfeur">
+                        <div class="flex justify-center items-center gap-1 border-[10px] border-stone-200 absolute top-[13rem] right-[1rem] rounded-xl p-1 bg-green-900 text-stone-200">
+                            <p class="">15,99 €</p>
+                            <p class="font-normal text-xs line-through">60 €</p>
+                        </div>
+                        <div class="flex flex-col px-2 my-4">
+                            <h3 class="text-2xl">Leadership positif</h3>
+                            <p class="mt-2">Marc Nguyen | Consultant</p>
+                            <div class="flex absolute top-[13rem] left-[0.60rem]">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                                <img class="opacity-50" src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                            </div>
+                            <p class="font-medium mt-2">Inspirez, motivez et fédérez votre équipe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-14" onclick="window.location.href='#forma_popu'">
+                    <button class="mt-[3.5rem] mx-auto rounded-md px-4 py-2 bg-green-900 shrink-0 whitespace-nowrap text-stone-200 lg:hover:text-green-950 shadow-2xl lg:hover:border-green-700 border-2 lg:hover:bg-stone-200 border-stone-200 transition-all duration-[400ms] shadow-stone-500/20 max-lg:active:text-green-950 max-lg:active:border-green-700 max-lg:active:bg-stone-200 lg:hover:scale-105 lg:transition-transform" aria-label="Bouton qui mène aux formations populaires" title="Voir plus de formations">Voir plus de formations</button>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col items-center bg-stone-200 pt-10 pb-20">
+            <h2 class="uppercase mx-auto text-4xl justify-center items-center text-center text-green-950 font-extrabold">AVIS CLIENTS</h2>
+            <div class="flex flex-col gap-20 w-[80%] pt-10   lg:flex-wrap lg:w-[95%] lg:flex-row  lg:gap-0 lg:justify-evenly   xl:justify-center xl:gap-20">
+                <div class="bg-white px-10 py-10 text-justify shadow-[0_8px_1rem_rgba(0,0,0,0.20)] rounded-md   lg:w-[43.9453125vw]   xl:w-[35rem]">
+                    <img class="mx-auto rounded-[10rem] shadow-[0_8px_1rem_rgba(0,0,0,0.20)] max-w-[8.6875rem] max-h-[8.6875rem]" src="./ressources/img/profil-1.jpg" alt="Photo de Juliette">
+                    <h3 class="text-4xl font-extrabold text-center mt-6">Juliette</h3>
+                    <div class="mx-auto mt-3 flex w-[8.5rem] justify-center p-1 rounded-3xl bg-stone-600 gap-1 shadow-[0_8px_1rem_rgba(0,0,0,0.20)]">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                    </div>
+                    <p class="mt-5">J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
+                </div>
+                <div class="bg-white px-10 py-10 text-justify shadow-[0_8px_1rem_rgba(0,0,0,0.20)] rounded-md   lg:w-[43.9453125vw]  xl:w-[35rem]">
+                    <img class="mx-auto rounded-[10rem] shadow-[0_8px_1rem_rgba(0,0,0,0.20)] max-w-[8.6875rem] max-h-[8.6875rem]" src="./ressources/img/profil-2.jpg" alt="Photo de Camille" title="Photo de Camille">
+                    <h3 class="text-4xl font-extrabold text-center mt-6">Camille</h3>
+                    <div class="mx-auto mt-3 flex w-[8.5rem] justify-center p-1 rounded-3xl bg-stone-600 gap-1 shadow-[0_8px_1rem_rgba(0,0,0,0.50)]">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        <img src="./ressources/icone/star.svg" alt="Etoile jaune pour noter" title="Etoiles jaune">
+                        </div>
+                    <p class="mt-5">Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-[1100px] w-[90%] md:w-[95%]  flex bg-green-900 justify-center rounded-[35rem] mx-auto shadow-[0_0_10rem_rgba(21,128,61,0.70)] mt-10">
+            <div class="w-full flex flex-col justify-center pl-[5.83333333333333vw] pr-[6.13095238095238vw] pb-[93px] gap-[3rem] max-w-[105rem]">
+                <div class="flex flex-col p-[0.1875rem] items-center">
+                    <h2 class="w-[90%] text-center text-stone-200 font-black mt-[6rem] uppercase max-sm:text-3xl text-4xl justify-center">LES AVANTAGES KLIVIO</h2>
+                    <ul class="flex flex-col gap-2 mt-[3rem] font-normal max-md:text-[1.1rem] text-2xl max-w-[616px] pl-[3.86904761904762vw] text-stone-200">
+                        <li class="relative ml-[2.8125rem]  before:absolute before:content-['\f060'] before:font-['Font_Awesome_6_Free'] before:font-black before:text-[30px] before:-left-[47px] before:rotate-[135deg]">Suivi de sa progression</li>
+                        <li class="relative ml-[2.8125rem]  before:absolute before:content-['\f304'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[22.55px] before:-left-[47px]">Exercices et QCM pour la mise en pratique</li>
+                        <li class="relative ml-[2.8125rem]   before:absolute before:content-['\f019'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[25px] before:-left-[47px]">Possibilité de télécharger/imprimer les formations</li>
+                        <li class="relative ml-[2.8125rem]   before:absolute before:content-['\f005'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[25px] before:-left-[47px]">Contenu qualitatif et vérifié</li>
+                        <li class="relative ml-[2.8125rem]   before:absolute before:content-['\f017'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[25px] before:-left-[47px]">Suivi en autonomie, 24h/24, 7j/7</li>
+                        <li class="relative ml-[2.8125rem]   before:absolute before:content-['\f27a'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[25px] before:-left-[47px]">Espaces d’échanges dédiés pour poser ses questions sur les formations</li>
+                    </ul>
+                </div>
+                <div class="m-auto">
+                    <img class="max-w-[%] h-auto rounded-[30rem]" src="./ressources/img/beau-couple-jouant-au-golf-sur-un-parcours-de-golf.jpg" alt="couple jouant au golf sur le terrain">
+                </div>
+            </div>
+        </section>
+        <section class="mt-[14rem] mb-[10rem]">
+            <div class="relative">
+                <div class="">
+                    <h2 class="hidden">CRÉEZ VOS FORMATIONS</h2>
+                    <img class="mb-14 w-full h-[500px] object-cover object-center" src="./ressources/img/vue-arriere-homme-jouant-au-golf-dans-la-nature.jpg" alt="photo d'un homme qui lève les bras pour celebre la victoire">
+                </div>
+                <div class="mx-6 md:mx-14 font-bold px-0 lg:px-5 py-10 lg:py-14 xl:py-20  lg:text-justify shadow-[0_0_6rem_rgba(0,0,0,0.50)] rounded-xl   lg:w-[60%] lg:max-w-[800px] lg:mx-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:bg-stone-900/30 lg:backdrop-blur-md">
+                    <h2 class="mb-9 uppercase mx-auto text-2xl md:text-3xl justify-center items-center text-center lg:text-stone-200 font-extrabold">CRÉEZ VOS FORMATIONS AVEC KLIVIO</h2>
+                    <ul class="flex flex-col gap-2 max-md:text-[1.1rem] lg:mx-auto text-2xl max-w-[616px] lg:text-stone-200 font-bold ">
+                        <li class="relative max-lg:pr-3 ml-[2.8125rem] max-lg:before:text-[17px]    before:absolute before:content-['\f4c0'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[22.55px] before:-left-[47px] max-lg:before:-left-[30px]">Commission unique, au pourcentage sur les ventes</li>
+                        <li class="relative max-lg:pr-3 ml-[2.8125rem] max-lg:before:text-[17px]    before:absolute before:content-['\f004'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[22.55px] before:-left-[47px] max-lg:before:-left-[30px]">Mise en avant sur la plateforme</li>
+                        <li class="relative max-lg:pr-3 ml-[2.8125rem] max-lg:before:text-[17px]  before:absolute before:content-['\f304'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[22.55px] before:-left-[47px] max-lg:before:-left-[30px]">Contrôle total sur le cours : contenu, prix</li>
+                        <li class="relative max-lg:pr-3 ml-[2.8125rem] max-lg:before:text-[17px]   before:absolute before:content-['\f013'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[22.55px] before:-left-[47px] max-lg:before:-left-[30px]">Fonctionnalités avancées : espace commentaires, possibilité de créer des QCM, exercices, vidéos, téléchargement en PDF, suivi des statistiques des ventes, gestion de codes promos, gestion de la facturation, etc</li>
+                        <li class="relative max-lg:pr-3 ml-[2.8125rem] max-lg:before:text-[17px]    before:absolute before:content-['\f007'] before:font-['Font_Awesome_6_Free'] before:font-semibold before:text-[22.55px] before:-left-[47px]  max-lg:before:-left-[30px]">Le professeur reste 100% propriétaire de sa formation et conserve tous ses droits d’auteur</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+         <section  id="apropos" class="flex flex-col bg-green-900 text-stone-200 text-lg font-semibold">
+            <div class="w-full h-auto flex flex-col items-center justify-center lg:px-12 lg:flex-row">
+                <div class="lg:flex lg:h-auto lg:w-[50.5952381vw] lg:flex-col items-center justify-center px-[2rem] lg:py-[6rem] lg:px-[2rem] ">
+                    <h2 class="lg:w-full w-[82.17811704834606vw] font-black text-4xl text-center uppercase mt-10 mb-10 lg:text-5xl mx-auto lg:px-[3rem]">À PROPOS DE KLIVIO</h2>
+                    <p class="mb-5 text-justify">Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail. 
+                    <br><br>
+                    Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  écessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une  ducation enrichissante et équitable, guidant notre mission d'offrir des pportunités d'apprentissage de qualité</p>
+                </div>
+                <div class="max-lg:w-full max-lg:h-[23.125rem] flex justify-center items-center bg-green-900   lg:max-h-[430px]">
+                    <img class="max-lg:w-full max-lg:max-w-[54.45292621vw]  lg:max-h-[430px] h-auto    lg:w-[49.4047619vw] lg:px-[6rem] xl:px-[8rem] 2xl:px-[10rem]" src="./ressources/img/logo.png" alt="Logo Klivio">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="flex flex-col items-center justify-center py-12 px-4 w-full">
+            <h2 class="text-3xl md:text-4xl font-black uppercase text-green-950 mb-2 text-center">NOUS CONTACTER</h2>
+            <hr class="w-24 h-1 bg-green-900 border-none mb-10">
+            <form class="w-full max-w-4xl flex flex-col gap-6">
+                <div class="flex flex-col md:flex-row gap-6 w-full">
+                    <label for="nom" class="sr-only">Nom</label>
+                    <input class="w-full bg-stone-200 text-green-950 placeholder-green-900 p-4 border-2 border-green-900 focus:outline-none focus:border-green-500 transition-colors duration-400" type="text" name="nom" id="nom" placeholder="Nom">
+                    <label for="email" class="sr-only">Email</label>
+                    <input class="w-full bg-stone-200 text-green-950 placeholder-green-900 p-4 border-2 border-green-900 focus:outline-none focus:border-green-500 transition-colors duration-400" type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <textarea class="w-full h-48 bg-stone-200 text-green-950 placeholder-green-900 p-4 border-2 border-green-900 focus:outline-none focus:border-green-500 transition-colors resize-none" name="textarea" id="textareaContact" placeholder="Votre message"></textarea>
+            </form>
+            <div class="w-full max-w-4xl mt-6 flex justify-center">
+                <button class="w-full md:w-64 bg-green-900 lg:hover:bg-stone-200 lg:hover: border-2 lg:hover:border-green-900 text-stone-200 lg:hover:text-green-950 font-bold py-3 px-6 transition duration-400 active:border-green-500     max-lg:active:bg-stone-200 max-lg:active:border-2 max-lg:active:border-green-900 max-lg:active:text-green-950" aria-label="Bouton pour envoyer le formulaire de contact" title="Envoyer le formulaire">Envoyer</button>
+            </div>
+            <hr class="hidden w-full h-1 bg-green-900 border-none mt-16">
+        </section>
+    </main>
+    <footer class="flex flex-col bg-green-950 text-white shadow-[0_0_10rem_rgba(21,128,61,0.70)]">
+        <div class="flex flex-col items-center   lg:flex-row lg:justify-evenly">
+            <div class="p-4 my-5   lg:p-10 lg:my-0">
+                <img onclick="window.scrollTo(0, 0)" class="cursor-pointer lg:hover:scale-90 lg:transition-transform" src="./ressources/img/logo.png" alt="Logo Klivio">
+            </div>
+            <div class="flex flex-col my-5   lg:flex-row lg:gap-20">
+                <div class="flex flex-col items-center   lg">
+                    <h3 class="mb-3 text-2xl">Mentions Légales</h3>
+                    <ul class="flex flex-col text-center">
+                        <li class="lg:inline-block lg:hover:scale-125 lg:transition-transform"><a href="./ressources/documents/CGU.txt">CGU</a></li>
+                        <li class="lg:inline-block lg:hover:scale-125 lg:transition-transform"><a href="./ressources/documents/CGV.txt">CGV</a></li>
+                        <li class="lg:inline-block lg:hover:scale-125 lg:transition-transform"><a href="./ressources/documents/FAQ.txt">FAQ</a></li>
+                        <li class="lg:inline-block lg:hover:scale-125 lg:transition-transform"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center my-5 mt-8 lg:mt-0 lg:my-0">
+                    <h3 class="mb-3 text-2xl">Coordonnées</h3>
+                    <ul class="">
+                        <li class="relative pr-3 ml-[2.8125rem] before:text-[17px]    before:absolute before:content-['\f3c5'] before:font-['Font_Awesome_6_Free'] before:font-semibold  before:-left-[30px]">1 place république,<br>75003 Paris</li>
+                        <li class="relative pr-3 ml-[2.8125rem] before:text-[17px]    before:absolute before:content-['\f095'] before:font-['Font_Awesome_6_Free'] before:font-semibold  before:-left-[30px]">01.02.03.04.05</li>
+                        <li class="relative pr-3 ml-[2.8125rem] before:text-[17px]    before:absolute before:content-['\f0e0'] before:font-['Font_Awesome_6_Free'] before:font-semibold  before:-left-[30px]">contact@klivio.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hidden">
+                <button class="" aria-label="bouton qui ouvre le menu de connexion" title="Connexion">Connexion</button>
+                <button class="" aria-label="bouton qui ouvre le menu d'inscription" title="Inscription">Inscription</button>
+            </div>
+        </div>
+        <hr class="hidden lg:flex lg:w-full lg:h-1 lg:bg-stone-200 lg:border-none">
+        <div class="hidden lg:flex justify-between m-4">
+            <p class="hover:cursor-pointer lg:inline-block lg:hover:scale-110 lg:transition-transform" onclick="window.location.href='./ressources/documents/copyright.txt'">© Klivio - 2025</p>
+            <div class="flex gap-3">
+                <p class="">Suivez - nous</p>
+                <a class="lg:inline-block lg:hover:scale-125 lg:transition-transform" target="_blank" href="https://www.facebook.com/?locale=fr_FR"><img src="./ressources/icone/facebook.svg" alt="logo réseau social facebook" title="Logo de Facebook"></a>
+                <a class="lg:inline-block lg:hover:scale-125 lg:transition-transform" target="_blank" href="https://x.com/?lang=fr"><img src="./ressources/icone/X.svg" alt="logo réseau social X" title="Logo de X"></a>
+                <a class="lg:inline-block lg:hover:scale-125 lg:transition-transform" target="_blank" href="https://www.instagram.com/"><img src="./ressources/icone/instagram.svg" alt="logo reseau social instagram" title="Logo de Instagram"></a>
+                <a class="lg:inline-block lg:hover:scale-125 lg:transition-transform" target="_blank" href="https://fr.linkedin.com/"><img src="./ressources/icone/linkedin.svg" alt="logo réseau social linkedin" title="Logo de Linkedin"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
