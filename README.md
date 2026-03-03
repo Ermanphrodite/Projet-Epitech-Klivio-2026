@@ -68,3 +68,7 @@ Ce projet respecte des normes strictes de développement front-end :
 * Les deux versions du projet (HTML/CSS et Tailwind) sont consultables publiquement via des liens directs en haut de page.
 
 ---
+
+<img width="760" height="804" alt="image" src="https://github.com/user-attachments/assets/3c355fb6-e9ad-4486-a316-b2a1d240323f" />
+<img width="189" height="801" alt="image" src="https://github.com/user-attachments/assets/7a056c5f-fcc6-4c63-8a36-328f67fb5986" />
+
